@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackwise-spend wisely</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header{
+            width: 90%;
+            margin: auto;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        header h1{
+            color: green;
+            font-size: 20px;
+        }
+        header nav ul{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        header nav ul li{
+            list-style: none;
+        }
+        header nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .nav-btns{
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+            align-items: center;
+        }
+        .nav-btns a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav-btns button{
+            background-color: green;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+        }
+        .hero{
+            margin: 40px auto;
+            background: linear-gradient(180deg, white, #a5ff99, green);
+            margin-bottom: 50px;
+            border-radius: 0px 0px 40px 40px;
+        }
+        .header-outline{
+            background-color: green;
+            padding: 10px 40px;
+            text-align: center;
+            width: fit-content;
+            margin: auto;
+            color: white;
+            border-radius: 25px;
+        }
+        .hero .title{
+            font-size: 60px;
+            width: 60%;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .hero .desc{
+            width: 80%;
+            text-align: center;
+            margin:10px auto;
+        }
+        .cta{
+            background-color: green;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: white;
+            border-radius: 25px;
+            margin: 20px auto;
+        }
+        .hero-image{
+            width: 80%;
+            padding: 20px;
+            background: #bbfede;
+            border-radius: 10px;
+            margin: auto;
+        }
+        .hero-image-bg2{
+            padding: 20px;
+            background: #cdebdc;
+            border-radius: 10px;
+        }
+        .hero-image .hero-image-bg2 img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trackwise</h1>
+        <nav>
+            <ul>
+                <li><a style="color: green;" href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <div class="nav-btns" >
+            <a href="#">Login</a>
+            <button>Signup</button>
+        </div>
+    </header>
+
+    <section class="hero" >
+        <div class="header-outline" >Organise with ease</div>
+        <p class="title" >Simplify your workflow, Maximize your productivity</p>
+        <p class="desc">Our task management dashboard is built to streamline your day. From tracking deadlines to collaborating with your team, everything you need is just a click away</p>
+        <div style="width: fit-content; margin:40px auto;" ><a class="cta" href="#">Get started</a></div>
+        <div class="hero-image" >
+            <div class="hero-image-bg2" >
+                <img src="/hero.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="features" >
+        <div class="header-outline" >Our Features</div>
+        <div class="features-container">
+            <div class="feature-card" >
+                <div><i class="icon-check-mark" ></i></div>
+                <p class="title">Visual Task Status Tracker</p>
+                <p class="info">Stay on top of your work with an intuitive layout that shows task progress ta a glance</p>
+            </div>
+            <div class="feature-card" >
+                <div><i class="icon-check-mark" ></i></div>
+                <p class="title">Visual Task Status Tracker</p>
+                <p class="info">Stay on top of your work with an intuitive layout that shows task progress ta a glance</p>
+            </div>
+            <div class="feature-card" >
+                <div><i class="icon-check-mark" ></i></div>
+                <p class="title">Visual Task Status Tracker</p>
+                <p class="info">Stay on top of your work with an intuitive layout that shows task progress ta a glance</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="pricing">
+        <h1 class="pricing-header-desc" >Pick your plan and get started</h1>
+        <p class="pricing-header-desc">Connect Track Wise with the tools you rely on every day - email, calendars and more. It's quick, easy, and keeps everything running smoothly so you can focus on what really matters.</p>
+        <div class="pricing-toggle" >
+            <span>Monthly</span>
+            <span>Annual <span>save 30%</span></span>
+        </div>
+    </section>
+</body>
+</html>

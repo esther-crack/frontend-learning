@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgb(21, 79, 10);
+        }
+
+        nav {
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #eeeeee47;
+            margin: 50px auto;
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+            width: 100%;
+            padding: 20px;
+        }
+
+        nav ul a.active {
+            background-color: #00ff1e;
+        }
+
+        nav ul a.nav-links:hover {
+            background-color: #001503;
+        }
+
+        /* nav ul a:focus{
+            background-color: #001503;
+        } */
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 50px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+            width: 100px;
+            color: #001503;
+        }
+
+        .dropdown-links {
+            height: 25px;
+            text-align: center;
+        }
+
+        .dropdown-links:hover {
+            background-color: #001503;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+            height: 500px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.283);
+            border: solid 1px #eeeeee47;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: #eeeeeec5;
+            border-radius: 5px;
+        }
+
+        .circle1, .circle2, .circle3{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            position: absolute;
+            filter: blur(100px);
+        }
+        .circle1{
+            bottom: -200px;
+            left: -100px;
+            background-color: rgba(238, 0, 255, 0.516);
+
+        }
+        .circle2{
+            top: -150px;
+            right: -100px;
+            background-color: rgba(255, 0, 0, 0.369);
+        }
+        .circle3{
+            bottom: -150px;
+            right: -100px;
+            background-color: rgba(0, 4, 255, 0.369);
+        }
+
+
+        @media (max-width:724px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                height: fit-content;
+                flex-direction: column;
+            }
+
+            nav {
+                height: fit-content;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="#" class="active">
+                <li>Html</li>
+            </a>
+            <a href="#" class="nav-links">
+                <li>Css</li>
+            </a>
+            <a href="#" class="nav-links">
+                <li>Java</li>
+            </a>
+            <a href="#" class="nav-links dropdown">
+                <li>Python</li>
+                <div class="dropdown-content">
+                    <div class="dropdown-links">test</div>
+                    <div class="dropdown-links">test</div>
+                    <div class="dropdown-links">test</div>
+                </div>
+            </a>
+            <a href="#" class="nav-links">
+                <li>Sql</li>
+            </a>
+            <a href="#" class="nav-links">
+                <li>React Js</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+    </div>
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="circle3"></div>
+
+
+</body>
+
+</html>

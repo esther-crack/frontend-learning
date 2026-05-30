@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(131, 48, 209);
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        header .logo img {
+            width: 50px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: beige;
+            text-transform: uppercase;
+        }
+
+        button {
+            background-color: transparent;
+            color: white;
+            padding: 5px 30px;
+            border: 1px solid white;
+            border-radius: 25px;
+            font-size: 18px;
+        }
+
+        .nav-btn:hover {
+            color: black;
+            background: linear-gradient(90deg, white, #06f75e);
+        }
+
+       
+        .hero {
+            max-width: 80%;
+            margin: auto;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero .hero-header {
+            font-size: 80px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .hero .hero-text {
+            text-align: center;
+            margin: 20px;
+            color: white;
+        }
+
+        .hero .hero-btn {
+            background: linear-gradient(90deg, white, #06f75e);
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .menu img {
+            display: none;
+        }
+
+
+        @media (max-width: 712px) {
+            .menu img {
+                display: block;
+            }
+
+            nav {
+                position: absolute;
+                right: 30px;
+                top: 120px;
+                width: 180px;
+                padding: 20px 0px;
+                border-radius: 25px;
+                background-color: #5fce9a;
+                display: none;
+            }
+
+            nav ul {
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+                height: 30px;
+            }
+
+            nav ul li:hover {
+                border-left: white 5px solid;
+            }
+
+            .hero .hero-header {
+                font-size: 40px;
+            }
+
+            .hero {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/image1.png" alt="">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">key features</a></li>
+                <li><a href="">price</a></li>
+                <li><a href="">about us</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <button class="nav-btn">sign up</button>
+            <img id="menu" src="right-menu.svg" width="50px" height="50px" alt="menu">
+        </div>
+    </header>
+
+    <main class="hero">
+        <p class="hero-header">MORE GROWTH,<span style="color: rgb(171, 245, 101);">LESS WORK</span> GET YOUR TIME BACK
+        </p>
+        <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima labore fuga doloribus ea
+            soluta libero accusamus ducimus porro beatae, error non quia dolores optio iusto nemo magni quod, velit
+            quis.</p>
+        <button class="hero-btn">contact us now</button>
+    </main>
+
+    <script>
+        let menu = document.getElementById("menu")
+        let nav = document.getElementById("nav")
+
+        let width = window.innerWidth
+
+        console.log(width)
+        const toggleNav = () => {
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+        menu.addEventListener("click", toggleNav)
+    </script>
+</body>
+
+</html
